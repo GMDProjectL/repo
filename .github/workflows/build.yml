@@ -1,2 +1,10 @@
-- name: Makepkg Build and Check
-  uses: edlanglois/pkgbuild-action@v1.1.9
+name: PKGBUILD CI
+
+on: [push, pull_request]
+
+jobs:
+  pkgbuild:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Makepkg Build and Check (Unmaintained)
+        uses: edlanglois/pkgbuild-action@v1.1.9
