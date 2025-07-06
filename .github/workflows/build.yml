@@ -1,0 +1,2 @@
+- name: Makepkg Build and Check
+  uses: edlanglois/pkgbuild-action@v1.1.9
