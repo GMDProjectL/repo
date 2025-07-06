@@ -16,6 +16,6 @@ jobs:
               echo "Successfully created the following package archive"
               echo "Package: ${{ steps.makepkg.outputs.pkgfile0 }}"
         - name: Upload Package Archive
-          uses: actions/upload-artifact@latest
+          uses: actions/upload-artifact@v4.6.2
           with:
               path: ${{ steps.makepkg.outputs.pkgfile0 }}
